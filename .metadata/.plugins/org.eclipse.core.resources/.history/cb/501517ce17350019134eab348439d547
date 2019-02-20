@@ -1,0 +1,17 @@
+package com.qa.library;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ItemManager {
+	
+	List<Items> itemslist = new ArrayList<Items>();
+	
+	public void addItems() {
+		
+		itemslist.add(new Book("Book One", 200, true));
+		
+	}
+
+	
+}

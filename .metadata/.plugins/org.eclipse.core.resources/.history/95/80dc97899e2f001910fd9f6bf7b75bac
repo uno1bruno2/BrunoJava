@@ -1,0 +1,14 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	List<Car> vehicles = new ArrayList<Car>();
+
+	public Garage(Car c) {
+		
+	}
+	
+}

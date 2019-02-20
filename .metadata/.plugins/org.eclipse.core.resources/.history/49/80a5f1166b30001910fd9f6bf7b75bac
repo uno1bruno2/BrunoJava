@@ -1,0 +1,24 @@
+package main;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.Before;
+
+import main.Goldilocks;
+
+public class GoldilocksTest {
+	
+	Goldilocks goldilocks;
+	
+	@Before
+	public void Before() {
+		this.goldilocks = new Goldilocks();
+	}
+	
+	@Test
+	public void test1() {
+		assertEquals("2 5 ", goldilocks.isChairOk(100, 80));
+	}
+	
+
+}

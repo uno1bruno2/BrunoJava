@@ -1,0 +1,33 @@
+package com.qa.enums;
+
+public enum Day {
+	
+	MONDAY ("Weekend is over"),
+	TUESDAY ("Something happens"),
+	WEDNESDAY ("Assessment day"),
+	THURSDAY ("Leam League"),
+	FRIDAY ("Looking forward to the weekend"),
+	SATURDAY ("Snooker and "),
+	SUNDAY ("Sleep and have fun");
+	
+	private String feeling;
+	
+	
+	
+	public String getFeeling() {
+		return feeling;
+	}
+
+
+
+	public void setFeeling(String feeling) {
+		this.feeling = feeling;
+	}
+
+
+
+	Day(String feeling) {
+		this.feeling = feeling;
+	}
+
+}

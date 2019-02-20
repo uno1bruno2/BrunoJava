@@ -1,0 +1,24 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.Before;
+
+import main.Main;
+
+public class Blackjacktest {
+	Main bjt;
+	
+	@Before
+	public void Before() {
+		bjt = new Main();
+	}
+	
+	@Test
+	public void Test() {
+		assertEquals(0, bjt.Blackjack(22,23));
+	}
+
+
+}

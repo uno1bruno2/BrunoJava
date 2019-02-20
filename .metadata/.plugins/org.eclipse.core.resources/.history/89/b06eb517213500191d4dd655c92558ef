@@ -1,0 +1,13 @@
+package com.qa.library;
+
+public class Book extends Items {
+	
+	private String name;
+	private int numOfPages;
+	private boolean hasReturned;
+	
+
+	
+	
+
+}

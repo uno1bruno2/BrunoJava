@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Enums&apos; to &apos;Stuff&apos;&#x0D;&#x0A;- Original element: &apos;Enums&apos;&#x0D;&#x0A;- Renamed element: &apos;Enums&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Enums&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Enums" name="Stuff" references="true" stamp="1550677618707" version="1.0"/>
+</session>

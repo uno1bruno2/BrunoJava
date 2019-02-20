@@ -1,0 +1,28 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Garage garage = new Garage();
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the brand of your car");
+		String brand = sc.nextLine();
+		System.out.println("Enter the model of your " + brand);
+		String model = sc.nextLine();
+		System.out.println("When was your " + brand + " " + model + " serviced");
+		String year = sc.nextLine();
+		
+		Car c = new Car(brand,model,year);
+		
+		garage.addCar(c);
+
+		
+		
+		
+	}
+
+}

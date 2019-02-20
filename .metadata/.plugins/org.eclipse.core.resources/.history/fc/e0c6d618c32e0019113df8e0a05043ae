@@ -1,0 +1,23 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		List<Integer> primes = new ArrayList<>();
+
+		for (int i = 2; i < 15; i++) {
+			primes.add(i);
+		}
+		
+		for (int i = 2; i < 4; i++) {
+			primes = primes.stream().filter(x -> x % i == 0  && x > i).collect(Collectors.toList());
+		}
+		
+	}
+
+}

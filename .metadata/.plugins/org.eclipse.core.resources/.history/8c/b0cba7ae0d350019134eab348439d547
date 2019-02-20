@@ -1,0 +1,19 @@
+package com.qa.library;
+
+public class Items extends Library {
+	
+	private boolean hasReturned;	
+
+	public boolean isHasReturned() {
+		return hasReturned;
+	}
+
+	public void setHasReturned(boolean hasReturned) {
+		this.hasReturned = hasReturned;
+	}
+	
+	public Items(boolean hasReturned) {
+		this.hasReturned = hasReturned;
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.qa.library;
+
+public class Book extends Items {
+	
+	private boolean hasReturned;
+	private String bookname;
+	private int numofpages;
+	
+	public Book(String bookname, int numofpages, boolean hasReturned) {
+		super(hasReturned);
+		this.bookname = bookname;
+		this.numofpages = numofpages;
+	}
+
+	public boolean isHasReturned() {
+		return hasReturned;
+	}
+
+	public void setHasReturned(boolean hasReturned) {
+		this.hasReturned = hasReturned;
+	}
+
+	public String getBookname() {
+		return bookname;
+	}
+
+	public void setBookname(String bookname) {
+		this.bookname = bookname;
+	}
+
+	public int getNumofpages() {
+		return numofpages;
+	}
+
+	public void setNumofpages(int numofpages) {
+		this.numofpages = numofpages;
+	}
+	
+	
+
+}

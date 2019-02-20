@@ -1,0 +1,17 @@
+package test;
+
+import Main.BlackjackTest;
+
+public class Blackjacktest {
+	
+	@Test
+	public void Test() {
+		
+		BlackjackTest bjt = new BlackjackTest();
+		
+		assertEquals(0, bjt.Blackjack(22,23));
+		
+	}
+
+
+}

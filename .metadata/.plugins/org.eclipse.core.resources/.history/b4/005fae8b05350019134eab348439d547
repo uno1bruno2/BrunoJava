@@ -1,0 +1,22 @@
+package com.qa.library;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LibraryTest {
+	
+	@Test
+	public void isNameTest() {
+		Member lib = new Member("Bruno",23);
+		assertEquals("Bruno",lib.getName());
+	}
+	
+	@Test
+	public void bookReturned() {
+		Items book = new Book("Book b",200,false);
+		book.setHasReturned(true);
+		assertEquals(true,book.isHasReturned());
+	}
+
+}

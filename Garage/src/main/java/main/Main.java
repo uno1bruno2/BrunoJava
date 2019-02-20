@@ -1,0 +1,53 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Garage garage = new Garage();
+		boolean again = true;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How many tyres does your vehicle have?");
+		int n = Integer.parseInt(sc.nextLine());
+		if (n != 4) {
+			System.out.println("This is not a car!");
+			break;
+		}
+		
+		while(again) {
+			System.out.println("Enter the brand of your car");
+			String brand = sc.nextLine();
+			System.out.println("Enter the model of your " + brand);
+			String model = sc.nextLine();
+			System.out.println("When was your " + brand + " " + model + " serviced");
+			String year = sc.nextLine();
+		
+			Car c = new Car(brand,model,year);
+		
+			garage.addCar(c);
+			
+			String res = "";
+
+			
+			System.out.println("Do you want to add another car?");
+			res = sc.nextLine();
+			
+			if ("no".equals(res.toLowerCase())) {					
+				again = false;
+			}
+					
+			
+			
+		}
+		
+
+		System.out.println(garage.getVehicles().toString());
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package main;
+
+public class Goldilocks {
+	
+	public String isChairOk(int gold, int maxTemp, int light) {
+		
+		String result = "";
+
+		int[] listWeight = { 0, 30 , 130 , 90 , 150 , 120 , 200 , 110 , 160 , 60 , 120 , 10 , 25 , 300 , 250 };
+		int[] listTemp = { 0 , 50 , 60 , 60 , 85 , 70 , 200 , 100 , 110 , 150 , 40 , 20 , 60 , 60 , 210 };
+		
+		for (int i = 0; i < listWeight.length; i++) {
+			if (listWeight[i] < gold || listTemp[i] > maxTemp || light > 70) {
+				listWeight[i] = 0;
+			}
+			if (listWeight[i] != 0) {
+				result += "" + i + " ";
+			}
+		}
+		
+		System.out.println(result);
+		
+		return result;
+		
+	}
+
+}

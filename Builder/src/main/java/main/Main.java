@@ -1,0 +1,18 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		CatBuilder builder = CatBuilder.getInstance();
+		Cat pip = builder.name("pip").weight("500").buildCat();
+		Cat mango = builder.name("mango").lives("1").buildCat();
+		
+		System.out.println(pip.name);
+		System.out.println(mango.weight);
+		
+	}
+	
+	
+	
+}

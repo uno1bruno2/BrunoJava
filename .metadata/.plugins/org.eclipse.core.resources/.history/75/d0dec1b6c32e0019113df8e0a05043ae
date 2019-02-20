@@ -1,0 +1,22 @@
+package main;
+
+import java.util.stream.Collectors;
+
+public class IsPrime {
+	
+	public List<Integer> primes(List<Integer> numbers) {
+		
+		return numbers.stream().filter(x -> ( isPrime(x) &&  )).collect(Collectors.toList());
+		
+	}
+	
+	private Boolean isPrime(int x) {
+		
+		if (x == 2)
+			return
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,47 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.qa.author.Main;
+
+import org.junit.Before;
+
+public class Blackjacktest {
+	
+	Main bjt;
+	
+	@Before
+	public void Before() {
+		bjt = new Main();
+	}
+	
+	@Test
+	public void Test1() {
+		assertEquals(12, bjt.Blackjack(22,23));
+	}
+	
+	@Test
+	public void Test2() {
+		assertEquals(17, bjt.Blackjack(5,17));
+	}
+	
+	@Test
+	public void Test3() {
+		assertEquals(22, bjt.Blackjack(15,22));
+	}
+
+	@Test
+	public void Test4() {
+		assertEquals(0, bjt.Blackjack(25,600));
+	}
+
+	@Test
+	public void Test5() {
+		assertEquals(Integer.MAX_VALUE, bjt.Blackjack(44,8));
+	}
+
+
+
+}

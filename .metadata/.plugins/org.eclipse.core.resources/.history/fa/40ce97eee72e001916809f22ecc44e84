@@ -1,0 +1,44 @@
+package main;
+
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("How many primes do you want to");
+		int n = Integer.parseInt(sc.nextLine());
+		
+
+        
+        int nNew = (n-2)/2;
+		
+		boolean[] isPrime = new boolean[n];
+        for (int i = 0; i <= n; i++) {
+            isPrime[i] = true;
+        }
+        
+        for (int i = 1; i <= nNew; i++) {
+        	for (int j = i ; (i+j+2*i*j) <= nNew; j++) {
+        		isPrime[i + j + 2*i*j] = false;
+        	}
+        }
+        
+        int primes = 0;
+        System.out.println(2);
+        for (int i=1; i<=nNew; i++) {
+        	if (isPrime[i]) {
+        		primes++;
+        		System.out.println(2*i+1);
+        	}
+        }
+        
+        
+        System.out.println("The number of primes <= " + n + " is " + (primes + 1));
+	}
+
+}

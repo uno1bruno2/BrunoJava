@@ -1,0 +1,35 @@
+package com.qa.enums;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Day day = Day.FRIDAY;
+		switch(day) {
+		case MONDAY:
+			System.out.println("Weekend is over");
+			break;
+		case TUESDAY:
+			System.out.println("Something happens");
+			break;
+		case WEDNESDAY:
+			System.out.println("Assessment day");
+			break;
+		case THURSDAY:
+			System.out.println("Leam League");
+			break;
+		case FRIDAY:
+			System.out.println("Looking forward to the weekend");
+			break;
+		case SATURDAY:
+			System.out.println("Snooker and ");
+			break;
+		case SUNDAY:
+			System.out.println("Sleep and have fun");
+			break;
+		}
+		
+		
+	}
+
+}

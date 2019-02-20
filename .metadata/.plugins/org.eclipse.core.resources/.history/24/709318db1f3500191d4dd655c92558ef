@@ -1,0 +1,53 @@
+package com.qa.library;
+
+import static org.junit.Assert.*;
+
+import java.util.stream.Collectors;
+
+import org.junit.Test;
+
+public class LibraryTest {
+	
+	@Test
+	public void isNameTest() {
+		Member lib = new Member("Bruno",23);
+		assertEquals("Bruno",lib.getName());
+	}
+	
+	@Test
+	public void bookReturnedTest() {
+		Book book = new Book("Book b",200,false);
+		book.setHasReturned(true);
+		assertEquals(true,book.isHasReturned());
+	}
+	
+	@Test
+	public void addItemTest() {
+		ItemManager im = new ItemManager();
+		im.addItems();
+//		Book book = new Book("Book Two",150,true);
+//		im.itemslist.add(book);
+//		im.itemslist.stream().filter(string -> (string.equals(book.getBookname()))).collect(Collectors.toList());
+		String boook2 = " ";
+		for (Items i : im.itemslist) {
+			boook2.concat(i.getName());
+		}
+		System.out.println(boook2);
+		assertEquals("Book Two", boook2);
+	}
+
+	@Test
+	public void removeItemTest() {
+		ItemManager im = new ItemManager();
+		im.itemslist.remove(im.bookAuto);
+		String boook3 = "";
+		for (Items i : im.itemslist) {
+			boook3 += i.getName() + " ";
+		}
+		assertEquals("", boook3);
+	}
+	
+//	@Test
+//	public void 
+
+}
